@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -16,8 +17,20 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
-*{
+
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+.scroll-1::-webkit-scrollbar {
+  width: 1px;
+}
+
+
+.scroll-1::-webkit-scrollbar-thumb {
+  background-color: rgb(248, 104, 104);
+  border-radius: 10px;
+
 }
