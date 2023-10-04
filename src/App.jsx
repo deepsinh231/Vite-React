@@ -1,8 +1,15 @@
 import React from 'react'
+import UsercontextProvider from './Context/UsercontextProvider'
+import Login from './componet/Login.jsx'
+import Profile from './componet/Profile.jsx'
 
 function App() {
   return (
-    <h1>Hello</h1>
+    <UsercontextProvider>
+      <Login />
+      <Profile />
+
+    </UsercontextProvider>
   )
 }
 
