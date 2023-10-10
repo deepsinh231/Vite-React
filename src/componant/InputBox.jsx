@@ -1,4 +1,4 @@
-import React, { useId, useState } from 'react'
+import React, { useId } from 'react'
 
 function InputBox({
     label,
@@ -13,7 +13,7 @@ function InputBox({
     className = ""
 
 }) {
-    const [data, setdata] = useState(false)
+    // const [data, setdata] = useState(false)
     const amountid = useId()
     return (
         <>
