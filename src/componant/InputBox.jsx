@@ -10,10 +10,10 @@ function InputBox({
     amountDiseble = false,
     currencyDisele = false,
     disableddata,
-    className = ""
+    className = "",
 
-}) {
-    // const [data, setdata] = useState(false)
+}) 
+{
     const amountid = useId()
     return (
         <>

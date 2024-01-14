@@ -9,7 +9,6 @@ function App() {
   const [covertedamount, setcovertedamount] = useState(0);
   const Usecurrency = Usecurrencyinfo(from);
   let usecurrencykey = Object.keys(Usecurrency);
-
   const swet = () => {
     setfrom(to)
     setto(from)
@@ -23,15 +22,14 @@ function App() {
     <div
       className="w-full h-screen flex flex-wrap justify-center items-center bg-cover bg-no-repeat"
       style={{
-        backgroundImage: `url('https://images.pexels.com/photos/590016/pexels-photo-590016.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')`,
+        backgroundImage: `url('https://picsum.photos/1260/750')`,
       }}
     >
       <div className="w-full">
         <div className="w-full max-w-md mx-auto border border-gray-60 rounded-lg p-5 backdrop-blur-sm bg-white/30">
           <form
             onSubmit={(e) => {
-              e.preventDefault();
-              // convert()
+              e.preventDefault()
             }}
           >
             <div className="w-full mb-1">
