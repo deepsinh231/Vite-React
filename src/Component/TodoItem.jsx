@@ -5,7 +5,6 @@ function TodoItem({todo} ) {
     const [isTodoEditable, setIsTodoEditable] = useState(false)
     const [todoMsg, setTodoMsg] = useState(todo.todos)
     const { updateTodo, deleteTodo, completedtodo } = Usetodo()
-    console.log(todo);
     const editTodo = () => {
         updateTodo(todo.id, { ...todo, todos: todoMsg })
         setIsTodoEditable(false)
